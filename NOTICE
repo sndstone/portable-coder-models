@@ -1,0 +1,19 @@
+Laya typed-decisions (English)
+==============================
+
+This model pack contains an ONNX conversion of the Laya System 1 decision model
+published by Convai Innovations at:
+
+  https://huggingface.co/convaiinnovations/laya-typed-decisions (repository root checkpoint)
+  revision 1a793eb568e6718f15941d08f85432581df534e3
+
+The original model is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Modifications: the checkpoint was converted to ONNX by the Portable Coding Tool export
+script (tools/system-one-export/export_onnx.py). The fp16 variant stores weights in
+float16 and the int8 variant uses 8-bit block-wise weight quantization; both were derived from
+the fp32 ONNX export. tokenizer.json and rl_agent_config.json are copied unchanged from the
+source revision.
+
+This conversion is not affiliated with, endorsed by, or supported by Convai Innovations.
+The Laya name is used only to identify the source of the model.
